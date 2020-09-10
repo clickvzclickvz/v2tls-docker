@@ -8,14 +8,15 @@ cat << EOF > /usr/local/etc/v2ray/config.json
   {
     "port": 8080,
     "listen":"127.0.0.1",
-    "protocol": "vmess",
+    "protocol": "vless",
     "settings": {
       "clients": [
         {
           "id": "c672fab4-24e2-45d7-a3cc-eb8ad15a3996",
-          "alterId": 4       
+          "level": 0       
         }
-      ]
+      ],
+      "decryption": "none"
     },
     "streamSettings": {
       "network": "ws",
